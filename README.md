@@ -45,6 +45,8 @@ There is a custom filter called `startFrom` to help you rendering items per page
 </div>
 ```
 
+Again, replace `post in posts` with your data.
+
 For pagination links you can either use Next/Previous buttons or page numbers (using another built-in filter called `range`).
 
 ```
