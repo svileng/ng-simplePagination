@@ -79,10 +79,10 @@ For problems/suggestions please create an issue on Github.
 
 ## Contributors
 
-Svilen Gospodinov [http://s2g.io](http://s2g.io)
+* Svilen Gospodinov [http://s2g.io](http://s2g.io)
 
 ## Credits
 
-AngularJS range filter: [http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#more-about-loops](http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#more-about-loops)
-AngularJS pagination: [http://jsfiddle.net/2ZzZB/56/](http://jsfiddle.net/2ZzZB/56/)
-Other uknown JSFiddles
+* AngularJS range filter: [http://www.yearofmoo.com/](http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#more-about-loops)
+* AngularJS pagination: [http://jsfiddle.net/2ZzZB/56/](http://jsfiddle.net/2ZzZB/56/)
+* Other uknown JSFiddles
