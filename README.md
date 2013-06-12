@@ -26,7 +26,7 @@ function($scope, Pagination) {
 This defaults to 5 items per page. You can pass an optional parameter with the number of items you want per page:
 
 ```
-$scope.pagination = Paginate.getNew(10);
+$scope.pagination = Pagination.getNew(10);
 ```
 
 Finally, calculate and set the number of pages depending on your data. Here's an example with a pre-defined `$scope.posts` array for a blog application:
