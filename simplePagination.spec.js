@@ -7,7 +7,7 @@ describe('Simple Pagination', function() {
 	// load the app
 	beforeEach(module('SimplePagination'));
 
-	// get service
+	// get service 
 	beforeEach(inject(function(Pagination) {
 		pagination = Pagination.getNew();
 	}));
