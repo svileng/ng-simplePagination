@@ -1,6 +1,6 @@
 # Simple Pagination
 
-An AngularJS module for simple pagination on static data. 
+An AngularJS module for simple pagination on static data. No directives here, just a service and some helpful filters.
 
 Mostly based on various snippets which I found on JSFiddle, with some changes by me.
 
