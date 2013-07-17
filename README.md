@@ -81,7 +81,7 @@ For problems/suggestions please create an issue on Github.
 
 ## Contributors
 
-* Svilen Gospodinov [http://s2g.io](http://s2g.io)
+* [@svileng](https://twitter.com/svileng)
 
 ## Credits
 
