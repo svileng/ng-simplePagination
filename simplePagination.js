@@ -1,6 +1,6 @@
 'use strict';
 
-var paginationModule = angular.module('SimplePagination', []);
+var paginationModule = angular.module('simplePagination', []);
 
 paginationModule.factory('Pagination', function() {
   

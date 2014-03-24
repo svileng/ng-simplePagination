@@ -1,23 +1,26 @@
-# Simple Pagination
+# ng-simplePagination
 
-An AngularJS module for simple pagination on static data. No directives here, just a service and some helpful filters.
+**Previously known as "angular-SimplePagination"**; is an AngularJS module for simple pagination on static data. No directives here, just a service and some helpful filters.
 
 Mostly based on various snippets which I found on JSFiddle, with some changes by me.
 
 ## Quick start
 
-Include `simplePagination.js` after `angular.min.js`.
+```
+bower install ng-simplePagination
+```
+or alternatively download and include `simplePagination.js` after `angular.min.js`.
 
-Add the `SimplePagination` module as a dependency when creating your app, e.g.
+Add the `simplePagination` module as a dependency when creating your app, e.g.
 
 ```
-var app = angular.module('myApp', ['SimplePagination']);`
+var app = angular.module('myApp', ['simplePagination']);`
 ```
 
 Inject the `Pagination` service to the controller containing the data which you want to paginate, and set it on the $scope:
 
 ```
-app.controller('MyCtrl', ['$scope', 'Pagination',   
+app.controller('MyCtrl', ['$scope', 'Pagination',
 function($scope, Pagination) {
   $scope.pagination = Pagination.getNew();
 }]);

@@ -1,11 +1,11 @@
 'use strict';
 
-describe('Simple Pagination', function() {
+describe('simplePagination', function() {
 
   var pagination;
 
   // load the app
-  beforeEach(module('SimplePagination'));
+  beforeEach(module('simplePagination'));
 
   // get service 
   beforeEach(inject(function(Pagination) {
