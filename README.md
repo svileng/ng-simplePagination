@@ -62,12 +62,12 @@ For pagination links you can either use Next/Previous buttons or page numbers (u
 and for rendering page numbers:
 
 ```
-<span ng-repeat="n in [] | range: pagination.numPages">
+<span ng-repeat="n in [] | range: pagination.numPages" ng-class="{current: n == pagination.page}">
 	<button ng-click="pagination.toPageId(n)">{{n + 1}}</button>
 <span>
 ```
 
-Note that the first page is actually __0__ hence the {{n + 1}}.
+The code above will also set the class "active" on the span for the current page number. Note that the first page is actually __0__ hence the {{n + 1}}.
 
 Optionally you can add some logic to hide/disable the buttons using the `pagination.page` and `pagination.numPages` attributes; here's an example:
 
