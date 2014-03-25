@@ -52,15 +52,20 @@ There is a custom filter called `startFrom` to help you rendering items per page
 
 Again, replace `post in posts` with your data.
 
-For pagination links you can either use Next/Previous buttons or page numbers (using another built-in filter called `range`).
-
+### Previous / Next page buttons
 ```
 <button ng-click="pagination.prevPage()">Previous</button>
 <button ng-click="pagination.nextPage()">Next</button>
 ```
+Optionally you can add some logic to hide/disable the buttons using the `pagination.page` and `pagination.numPages` attributes; here's an example:
 
-and for rendering page numbers:
+```
+ng-hide="pagination.page == 0" ng-click="pagination.prevPage()"
+ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()"
+```
 
+### Page numbers
+Using another built-in filter called `range`:
 ```
 <span ng-repeat="n in [] | range: pagination.numPages" ng-class="{current: n == pagination.page}">
 	<button ng-click="pagination.toPageId(n)">{{n + 1}}</button>
@@ -68,13 +73,6 @@ and for rendering page numbers:
 ```
 
 The code above will also set the class "active" on the span for the current page number. Note that the first page is actually __0__ hence the {{n + 1}}.
-
-Optionally you can add some logic to hide/disable the buttons using the `pagination.page` and `pagination.numPages` attributes; here's an example:
-
-```
-ng-hide="pagination.page == 0" ng-click="pagination.prevPage()"
-ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPage()"
-```
 
 ## Contributions
 
