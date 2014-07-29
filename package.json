@@ -1,0 +1,12 @@
+{
+  "name": "ng-simplePagination",
+  "version": "0.0.9",
+  "private": true,
+  "author": "Svilen Gospodinov <svilen.gospodinov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.12.19",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
