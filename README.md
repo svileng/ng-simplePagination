@@ -67,12 +67,16 @@ ng-hide="pagination.page + 1 >= pagination.numPages" ng-click="pagination.nextPa
 ### Page numbers
 Using another built-in filter called `range`:
 ```
-<span ng-repeat="n in [] | range: pagination.numPages" ng-class="{current: n == pagination.page}">
-	<button ng-click="pagination.toPageId(n)">{{n + 1}}</button>
-<span>
+<ul class="pagination">
+<li><a href="" ng-click="pagination.prevPage()">&laquo;</a></li>
+  <li ng-repeat="n in [] | range: pagination.numPages" ng-class="{active: n == pagination.page}">
+  <a href="" ng-click="pagination.toPageId(n)">{{n + 1}}</a>
+  </li>
+  <li><a href="" ng-click="pagination.nextPage()">&raquo;</a></li>
+</ul>
 ```
 
-The code above will also set the class "active" on the span for the current page number. Note that the first page is actually __0__ hence the {{n + 1}}.
+If you use, bootstrap.css, Above given list HTML coding give good appearance. Note that the first page is actually __0__ hence the {{n + 1}}.
 
 ## Contributions
 
