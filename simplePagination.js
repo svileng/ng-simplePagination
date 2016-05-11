@@ -30,7 +30,7 @@
       };
 
       paginator.firstPage = function(){
-         if(paginator.page < 0){
+         if(paginator.page > 0){
             paginator.page = 0;
          }
       };
