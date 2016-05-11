@@ -30,11 +30,15 @@
       };
 
       paginator.firstPage = function(){
-         paginator.page = 0;
+         if(paginator.page < 0){
+            paginator.page = 0;
+         }
       };
 
       paginator.lastPage = function(){
-         paginator.page = paginator.numPages - 1;
+         if(paginator.page < paginator.numPages - 1){
+            paginator.page = paginator.numPages - 1;
+         }
       };
 
       paginator.toPageId = function(id) {
