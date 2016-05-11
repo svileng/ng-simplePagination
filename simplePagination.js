@@ -29,6 +29,14 @@
         }
       };
 
+      paginator.firstPage = function(){
+         paginator.page = 0;
+      };
+
+      paginator.lastPage = function(){
+         paginator.page = paginator.numPages - 1;
+      };
+
       paginator.toPageId = function(id) {
         if (id >= 0 && id <= paginator.numPages - 1) {
           paginator.page = id;
